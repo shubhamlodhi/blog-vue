@@ -1,5 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <!-- // Home Component   Commit:First Home Component -->
+
   <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   <!-- <Home /> -->
   <Home data="Shubham is Here" msg="Hi from Shubham" />
