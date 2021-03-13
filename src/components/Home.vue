@@ -31,16 +31,19 @@
 
     <!-- Composition -->
     <ParentComponent />
+
+    <AnotherComponent />
   </div>
 </template>
 
 <script>
 import ParentComponent from "./ParentComponent.vue";
-
+import AnotherComponent from "./AnotherComponent.vue";
 export default {
   name: "Home",
   components: {
-    ParentComponent
+    ParentComponent,
+    AnotherComponent
   },
   props: {
     data: String,
