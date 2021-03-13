@@ -13,6 +13,21 @@
     <h1 v-if="show">If Block : Conditional Rendering in Vue</h1>
     <h1 v-else>Else Block : Conditional Rendering from else block in Vue</h1>
     <button v-on:click="display">Toggle Element</button>
+
+    <!-- For Loop -->
+    <table border="1px">
+      <tr>
+        <td>ID:</td>
+        <td>Name:</td>
+        <td>Email:</td>
+      </tr>
+
+      <tr v-for="items in users" :key="items.id">
+        <td>{{items.id}}</td>
+        <td>{{items.name}}</td>
+        <td>{{items.email}}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -37,7 +52,16 @@ export default {
     }
   },
   data() {
-    return { show: false };
+    return {
+      show: false,
+      users: [
+        { id: 1, name: "peter1", email: "peter1@example.com" },
+        { id: 2, name: "peter2", email: "peter2@example.com" },
+        { id: 3, name: "peter3", email: "peter3@example.com" },
+        { id: 4, name: "peter4", email: "peter4@example.com" },
+        { id: 5, name: "peter5", email: "peter5@example.com" }
+      ]
+    };
   }
 };
 </script>
