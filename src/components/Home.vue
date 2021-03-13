@@ -28,12 +28,20 @@
         <td>{{items.email}}</td>
       </tr>
     </table>
+
+    <!-- Composition -->
+    <ParentComponent />
   </div>
 </template>
 
 <script>
+import ParentComponent from "./ParentComponent.vue";
+
 export default {
   name: "Home",
+  components: {
+    ParentComponent
+  },
   props: {
     data: String,
     msg: String
