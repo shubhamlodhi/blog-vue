@@ -33,17 +33,21 @@
     <ParentComponent />
 
     <AnotherComponent />
+
+    <Binding />
   </div>
 </template>
 
 <script>
 import ParentComponent from "./ParentComponent.vue";
 import AnotherComponent from "./AnotherComponent.vue";
+import Binding from "./Binding.vue";
 export default {
   name: "Home",
   components: {
     ParentComponent,
-    AnotherComponent
+    AnotherComponent,
+    Binding
   },
   props: {
     data: String,
