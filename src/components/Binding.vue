@@ -1,7 +1,6 @@
 <template>
   <h1>Class and Style Binding</h1>
   <h1 v-bind:style="{color:'blue'}">Style Binding</h1>
-
   <h1 v-bind:class="{display:show}">Class Binding</h1>
   <h1 v-bind:class="[aclass]">Class Bind with array</h1>
   <h1 v-bind:class="[show ?'yesShow':'noShow']">Class Bind with array</h1>

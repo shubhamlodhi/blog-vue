@@ -35,6 +35,8 @@
     <AnotherComponent />
 
     <Binding />
+
+    <Databind />
   </div>
 </template>
 
@@ -42,12 +44,14 @@
 import ParentComponent from "./ParentComponent.vue";
 import AnotherComponent from "./AnotherComponent.vue";
 import Binding from "./Binding.vue";
+import Databind from "./Databind.vue";
 export default {
   name: "Home",
   components: {
     ParentComponent,
     AnotherComponent,
-    Binding
+    Binding,
+    Databind
   },
   props: {
     data: String,
